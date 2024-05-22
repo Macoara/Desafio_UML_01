@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultorio Médico La Paz</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="accents/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Consultorio Médico La Paz</h1>
+        <div class="menu text-center">
+            <button class="btn btn-primary" id="mostrarTodosBtn">Mostrar Todos los Pacientes</button>
+            <button class="btn btn-secondary" id="buscarPacienteBtn">Buscar Paciente</button>
+            <button class="btn btn-success" id="agregarPacienteBtn">Agregar Nuevo Paciente</button>
+        </div>
+        <div id="pacientes" class="hidden">
+            <!-- Aquí se mostrarán los datos de los pacientes -->
+        </div>
+        
+        <div id="buscar" class="hidden">
+            <h2 class="text-center mb-3">Buscar Paciente por Nombre</h2>
+            <div class="form-group">
+                <input type="text" class="form-control" id="buscarNombre" placeholder="Ingrese el nombre del paciente">
+            </div>
+            <button class="btn btn-primary" id="buscarBtn">Buscar</button>
+            <div id="resultadoBusqueda" class="mt-4">
+                <!-- Aquí se mostrarán los resultados de la búsqueda -->
+            </div>
+        </div>
+        <div id="agregar" class="hidden">
+            <h2 class="text-center mb-3">Agregar Nuevo Paciente</h2>
+            <div class="form-group">
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                <input type="number" class="form-control" id="edad" placeholder="Edad">
+                <input type="text" class="form-control" id="telefono" placeholder="Teléfono">
+                <input type="text" class="form-control" id="direccion" placeholder="Dirección">
+                <input type="text" class="form-control" id="diagnostico" placeholder="Diagnóstico">
+            </div>
+            <button class="btn btn-success" id="agregarBtn">Agregar Paciente</button>
+        </div>
+    </div>
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="accents/JavaScript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+body {
+    background-color: #f8f9fa;
+}
+.container {
+    margin-top: 20px;
+}
+.paciente-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+.paciente-card h5 {
+    margin-bottom: 10px;
+}
+#buscarNombre, #nombre, #apellido, #edad, #telefono, #direccion, #diagnostico {
+    width: 100%;
+    margin-bottom: 10px;
+}
+#buscarBtn, #agregarBtn {
+    width: 100%;
+}
+.menu {
+    margin-bottom: 20px;
+}
+.menu button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.hidden {
+    display: none;
+}
